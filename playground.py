@@ -21,5 +21,5 @@ res = df.query(myQuery)[colsToPrint]
             y="Total",
         ),
     )
-    + geom_bar()
+    + geom_bar(stat="identity")
 )

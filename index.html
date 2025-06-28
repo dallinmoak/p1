@@ -2221,7 +2221,7 @@ vertical-align: -.125em;
   <li><a href="#stretch-questiontask-1" id="toc-stretch-questiontask-1">STRETCH QUESTION|TASK 1</a></li>
   </ul>
 </nav>
-<div id="3fb65fd0" class="cell" data-execution_count="1">
+<div id="bbf559c2" class="cell" data-execution_count="1">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -2234,7 +2234,7 @@ vertical-align: -.125em;
 <section id="project-notes" class="level2">
 <h2 class="anchored" data-anchor-id="project-notes">Project Notes</h2>
 <p><strong>For Project 1 the answer to each question should include a chart <strong>and</strong> a written response. The years labels on your charts should not include a comma. At least <strong>two</strong> of your charts must include reference marks.</strong></p>
-<div id="0574c4a2" class="cell" data-execution_count="2">
+<div id="1268a162" class="cell" data-execution_count="2">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html</span></span>
@@ -2249,7 +2249,7 @@ vertical-align: -.125em;
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>res</span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># print(res.to_html(index=False))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="35">
+<div class="cell-output cell-output-display" data-execution_count="2">
 <div>
 
 
@@ -2508,20 +2508,15 @@ vertical-align: -.125em;
 <h2 class="anchored" data-anchor-id="questiontask-1">QUESTION|TASK 1</h2>
 <p><strong>How does your name at your birth year compare to its use historically?</strong></p>
 <p><em>type your results and analysis here</em></p>
-<div id="4211fb4c" class="cell" data-execution_count="3">
+<div id="6668e3f5" class="cell" data-execution_count="3">
 <details class="code-fold">
 <summary>Show the code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>(ggplot(</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  data <span class="op">=</span> res,</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  mapping <span class="op">=</span> aes(</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="st">&quot;year&quot;</span>,</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="st">&quot;Total&quot;</span>,</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>) <span class="op">+</span> geom_bar()</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>(ggplot(data<span class="op">=</span>res, mapping<span class="op">=</span>aes(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">&quot;year&quot;</span>,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span><span class="st">&quot;Total&quot;</span>,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>)) <span class="op">+</span> geom_bar(stat<span class="op">=</span><span class="st">&quot;identity&quot;</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-display" data-execution_count="36">
+<div class="cell-output cell-output-display" data-execution_count="3">
 
    
        <meta charset="UTF-8">
@@ -2530,7 +2525,7 @@ vertical-align: -.125em;
 //# sourceMappingURL=lets-plot.js.map</script>
    
    
-          <div id="GqNEI6"></div>
+          <div id="srcq1G"></div>
    <script type="text/javascript" data-lets-plot-script="plot">
    
    (function() {
@@ -2555,13 +2550,15 @@ vertical-align: -.125em;
        };
    }
    
-   const containerDiv = document.getElementById("GqNEI6");
+   const containerDiv = document.getElementById("srcq1G");
    let fig = null;
    
    function renderPlot() {
        if (fig === null) {
            const plotSpec = {
 "data":{
+"year":[1972.0,1978.0,1979.0,1980.0,1981.0,1982.0,1983.0,1984.0,1985.0,1986.0,1987.0,1988.0,1989.0,1990.0,1991.0,1992.0,1993.0,1994.0,1995.0,1996.0,1997.0,1998.0,1999.0,2000.0,2001.0,2002.0,2003.0,2004.0,2005.0,2006.0,2007.0,2008.0,2009.0,2010.0,2011.0,2012.0,2013.0,2014.0,2015.0],
+"Total":[5.0,6.0,12.0,9.0,8.0,14.0,5.0,32.0,52.0,51.0,44.0,71.0,72.0,73.0,79.0,91.0,135.0,132.0,121.0,142.0,153.0,159.0,189.0,187.0,186.0,198.0,173.0,155.0,145.0,133.0,151.0,151.0,92.0,91.0,87.0,68.0,62.0,66.0,35.0]
 },
 "mapping":{
 "x":"year",
@@ -2583,17 +2580,16 @@ vertical-align: -.125em;
 "scales":[],
 "layers":[{
 "geom":"bar",
+"stat":"identity",
 "mapping":{
 },
 "data_meta":{
 },
 "data":{
-"year":[1972.0,1978.0,1979.0,1980.0,1981.0,1982.0,1983.0,1984.0,1985.0,1986.0,1987.0,1988.0,1989.0,1990.0,1991.0,1992.0,1993.0,1994.0,1995.0,1996.0,1997.0,1998.0,1999.0,2000.0,2001.0,2002.0,2003.0,2004.0,2005.0,2006.0,2007.0,2008.0,2009.0,2010.0,2011.0,2012.0,2013.0,2014.0,2015.0],
-"Total":[1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0]
 }
 }],
 "metainfo_list":[],
-"spec_id":"5"
+"spec_id":"1"
 };
            fig = LetsPlot.buildPlotFromProcessedSpecs(plotSpec, containerDiv, sizing);
        } else {
@@ -2645,7 +2641,7 @@ vertical-align: -.125em;
 <h2 class="anchored" data-anchor-id="questiontask-2">QUESTION|TASK 2</h2>
 <p><strong>If you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?</strong></p>
 <p><em>type your results and analysis here</em></p>
-<div id="83194b22" class="cell" data-execution_count="4">
+<div id="75f6b903" class="cell" data-execution_count="4">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -2656,7 +2652,7 @@ vertical-align: -.125em;
 <h2 class="anchored" data-anchor-id="questiontask-3">QUESTION|TASK 3</h2>
 <p><strong>Mary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compare the name usage of each of the four names in a single chart. What trends do you notice?</strong></p>
 <p><em>type your results and analysis here</em></p>
-<div id="e92b7fbd" class="cell" data-execution_count="5">
+<div id="b2b2c729" class="cell" data-execution_count="5">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -2667,7 +2663,7 @@ vertical-align: -.125em;
 <h2 class="anchored" data-anchor-id="questiontask-4">QUESTION|TASK 4</h2>
 <p><strong>Think of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?</strong></p>
 <p><em>type your results and analysis here</em></p>
-<div id="b36b6056" class="cell" data-execution_count="6">
+<div id="1e8c71ee" class="cell" data-execution_count="6">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -2679,7 +2675,7 @@ vertical-align: -.125em;
 <h2 class="anchored" data-anchor-id="stretch-questiontask-1">STRETCH QUESTION|TASK 1</h2>
 <p><strong>Reproduce the chart Elliot using the data from the <code>names_year.csv</code> file.</strong></p>
 <p><em>type your results and analysis here</em></p>
-<div id="7747f9ef" class="cell" data-execution_count="7">
+<div id="d7a13044" class="cell" data-execution_count="7">
 <details class="code-fold">
 <summary>Show the code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Include and execute your code here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
