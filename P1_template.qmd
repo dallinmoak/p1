@@ -39,30 +39,24 @@ LetsPlot.setup_html(isolated_frame=True)
 __For Project 1 the answer to each question should include a chart **and** a written response. The years labels on your charts should not include a comma. At least **two** of your charts must include reference marks.__  
 
 ```{python}
-# Learn morea about Code Cells: https://quarto.org/docs/reference/cells/cells-jupyter.html
+import os
 
-# Include and execute your code here
-df = pd.read_csv("https://github.com/byuidatascience/data4names/raw/master/data-raw/names_year/names_year.csv")
-# for practice imma try to render a table that shows total use of "Dallin in the US for all years"
-colsToPrint = ['name', 'year', 'Total']
-targetName = 'Dallin'
-myQuery = f'name == "{targetName}"'
-res = df.query(myQuery)[colsToPrint]
-res
-# print(res.to_html(index=False))
+os.getcwd()
+from p1_source import myNamePlotData
+
+myNamePlotData
 ```
 
 ## QUESTION|TASK 1
 
 __How does your name at your birth year compare to its use historically?__
 
-_type your results and analysis here_
+_my name, "Dallin" occured most about 3 years after I was born, but the name had been trending up from obscurity for almost 8 years before my birth in 1996.
 
 ```{python}
-(ggplot(data=res, mapping=aes(
-    x="year",
-    y="Total",
-)) + geom_bar(stat="identity"))
+from p1_source import myNamePlot
+
+myNamePlot
 ```
 
 
@@ -70,11 +64,13 @@ _type your results and analysis here_
 
 __If you talked to someone named Brittany on the phone, what is your guess of his or her age? What ages would you not guess?__
 
-_type your results and analysis here_
+_The dataset indicates that Britanys of age 35 (in 2025) are most common.There are very few people by that name older than 50, and only a few younger than 19._
 
 ```{python}
-# Include and execute your code here
 
+from p1_source import brittanyPlot
+
+brittanyPlot
 
 ```
 
