@@ -113,12 +113,16 @@ movie_name_data
 
 __Reproduce the chart Elliot using the data from the `names_year.csv` file.__ 
 
-_type your results and analysis here_
+_I created the chart and used some ggplot tooling to attempt to adjust to look & feel of the chart to match the example. I couldn't figure out labels for vertical lines. the geom_vline() doesn't seem to support labels and i was having trouble with geom_text() causing an entire render failure_
 
 ```{python}
 # Include and execute your code here
+from p1_source import elliot_data, elliot_plot
 
-
+elliot_data
+```
+```{python}
+elliot_plot
 ```
 
 
