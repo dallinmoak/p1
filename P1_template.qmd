@@ -48,7 +48,8 @@ colsToPrint = ['name', 'year', 'Total']
 targetName = 'Dallin'
 myQuery = f'name == "{targetName}"'
 res = df.query(myQuery)[colsToPrint]
-print(res.to_html(index=False))
+res
+# print(res.to_html(index=False))
 ```
 
 ## QUESTION|TASK 1
@@ -58,7 +59,14 @@ __How does your name at your birth year compare to its use historically?__
 _type your results and analysis here_
 
 ```{python}
-
+(ggplot(
+  data = res,
+  mapping = aes(
+    x = "year",
+    y = "Total",
+  )
+) + geom_bar()
+)
 ```
 
 
