@@ -44,8 +44,11 @@ import os
 os.getcwd()
 from p1_source import my_name_plot_data
 
-my_name_plot_data
+# my_name_plot_data
 ```
+
+## Source code
+__source code available at [p1_source.py](/p1_source.py)__
 
 ## QUESTION|TASK 1
 
