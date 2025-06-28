@@ -42,21 +42,21 @@ __For Project 1 the answer to each question should include a chart **and** a wri
 import os
 
 os.getcwd()
-from p1_source import myNamePlotData
+from p1_source import my_name_plot_data
 
-myNamePlotData
+my_name_plot_data
 ```
 
 ## QUESTION|TASK 1
 
 __How does your name at your birth year compare to its use historically?__
 
-_my name, "Dallin" occured most about 3 years after I was born, but the name had been trending up from obscurity for almost 8 years before my birth in 1996.
+_my name, "Dallin" occured most about 3 years after I was born, but the name had been trending up from obscurity for almost 8 years before my birth in 1996._
 
 ```{python}
-from p1_source import myNamePlot
+from p1_source import my_name_plot
 
-myNamePlot
+my_name_plot
 ```
 
 
@@ -68,9 +68,9 @@ _The dataset indicates that Britanys of age 35 (in 2025) are most common.There a
 
 ```{python}
 
-from p1_source import brittanyPlot
+from p1_source import brittany_plot
 
-brittanyPlot
+brittany_plot
 
 ```
 
@@ -82,25 +82,29 @@ __Mary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compa
 _all names have a dip starting after about 1925, and a massive boom during the war years, with a peak after the end of the war._
 
 ```{python}
-from p1_source import q3DataPlot
-q3DataPlot
+from p1_source import q3_data_plot
+q3_data_plot
 
 ```
 _this graph attempts to normalize the data relative to their frequency in 1920. they seem to follow a really similar pattern, but with peter being the most strongly affected_
 ```{python}
-from p1_source import q3DataPlotAlt
-q3DataPlotAlt
+from p1_source import q3_data_plot_alt
+q3_data_plot_alt
 ```
 ## QUESTION|TASK 4
 
 __Think of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?__  
 
-_type your results and analysis here_
+_Neo from the Matrix (1999) has no occurances before 1999. This corrolation might indicate a causal relationship between the release of the movie and the occurance of the name. There seems to be no signficant decrease in the name's frequency in the 1.5 decades of data since the movie's release. Maybe matrix sequel movies had an effect. But both of the two sequels were released in '03 (excepting the 2021 reboot or whatever it was). The name seems relatively uncommon but I didn't do a comparison to aggregate frequencies for other names in the set_
 
 ```{python}
 # Include and execute your code here
+from p1_source import movie_name_plot, movie_name_data
 
-
+movie_name_plot
+```
+```{python}
+movie_name_data
 ```
 
 ---
