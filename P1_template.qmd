@@ -79,15 +79,18 @@ brittanyPlot
 
 __Mary, Martha, Peter, and Paul are all Christian names. From 1920 - 2000, compare the name usage of each of the four names in a single chart. What trends do you notice?__
 
-_type your results and analysis here_
+_all names have a dip starting after about 1925, and a massive boom during the war years, with a peak after the end of the war._
 
 ```{python}
-# Include and execute your code here
+from p1_source import q3DataPlot
+q3DataPlot
 
 ```
-
-
-
+_this graph attempts to normalize the data relative to their frequency in 1920. they seem to follow a really similar pattern, but with peter being the most strongly affected_
+```{python}
+from p1_source import q3DataPlotAlt
+q3DataPlotAlt
+```
 ## QUESTION|TASK 4
 
 __Think of a unique name from a famous movie. Plot the usage of that name and see how changes line up with the movie release. Does it look like the movie had an effect on usage?__  

@@ -32,3 +32,29 @@ brittanyPlot = ggplot(
         y="Total",
     ),
 ) + geom_bar(stat="identity")
+
+q3Data = df.query(
+    'name in ["Mary", "Martha", "Peter", "Paul"] and 1920 <= year <= 2000'
+)[["year", "name", "Total"]].rename(columns={"name": "Name"})
+
+q3DataPlot = ggplot(
+    data=q3Data,
+    mapping=aes(x="year", y="Total", color="Name"),
+) + geom_line(stat="identity")
+
+q3DataAlt = q3Data.copy()
+
+
+def compute_relative(row):
+    baseFrequency = df.query(f'name == "{row["Name"]}" and year == 1920')[
+        "Total"
+    ].values[0]
+    return row["Total"] / baseFrequency
+
+
+q3DataAlt["Relative"] = q3DataAlt.apply(compute_relative, axis=1)
+
+q3DataPlotAlt = ggplot(
+    data=q3DataAlt,
+    mapping=aes(x="year", y="Relative", color="Name"),
+) + geom_line(stat="identity")
